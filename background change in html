@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>
+			background change in html
+		</title>
+		<style>
+			.background{
+				background: linear-gradient(90edg,#2cd9ff,#7effb2);
+				background-size: 400% 400%;
+				animation: anim 2.5s infinite ease-in-out;
+			}
+			.button{
+				background-color:cornflowerblue;
+				border:double 4px yellow ;
+				border-radius: 30px;
+				text-align: center;
+				cursor: pointer;
+				padding: 13px 20px;
+				font-size: medium;
+				text-transform: uppercase;
+			}
+			.button2:hover{
+				background-color: green;
+				transition-duration: 2s;
+			}
+			.button3:hover{
+				background-color:red;
+				transition-duration: 2s;
+			}
+			.button4:hover{
+				background-color:black;
+				transition-duration: 2s;
+				color: aliceblue;
+			}
+			.button5:hover{
+				background-color:blue;
+				transition-duration: 2s;
+			}
+			.button6:hover{
+				background-color:grey;
+				transition-duration: 2s;
+			}
+			.button7:hover{
+				background-color:yellow;
+				transition-duration: 2s;
+			}
+		</style>
+	</head>
+	<body class="background">
+		<h1>Welcome to our page..</h1>
+		<p>change the background b y clicking on the colours: </p>
+		<button class="button button2" onclick="bggreen()">Green</button>
+		<script>function bggreen(){document.body.style.backgroundColor="green"}</script>
+		<button class="button button3" onclick="bgred()">Red</button>
+		<script>function bgred(){document.body.style.backgroundColor="red"}</script>
+		<button class="button button4" onclick="bgblack()">Black</button>
+		<script>function bgblack(){document.body.style.backgroundColor="black"}</script>
+		<button class="button button5"  onclick="bgblue()">Blue</button>
+		<script>function bgblue(){document.body.style.backgroundColor="blue"}</script>
+		<button class="button button6" onclick="bggrey()">Grey</button>
+		<script>function bggrey(){document.body.style.backgroundColor="grey"}</script>
+		<button class="button button7" onclick="bgyellow()">yellow</button>
+		<script>function bgyellow(){document.body.style.backgroundColor="yellow"}</script>
+	</body>
+	</html>
